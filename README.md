@@ -1,11 +1,13 @@
 # DB SQL Browser
 
-A lightweight SQL database browser for querying and managing relational databases, supporting SQLite and MySQL databases with an intuitive command-line interface.
+Small relational database with its own engine written in C++ and two front ends: a command-line interface and a Java desktop GUI.
 
-## Features
-- Execute SQL queries (SELECT, INSERT, UPDATE, DELETE) on SQLite and MySQL databases.
-- Browse database schema, tables, and records.
-- Import and export data in CSV and SQL formats.
-- Command-line interface for quick database operations.
-- Error handling for invalid queries and connection issues.
-- Support for basic transaction management.# DB-SQL-Browser
+## How it works
+
+- **Database engine.** Written in C++ with an object-oriented, modular design and a custom query handler that parses and executes the queries.
+- **Command-line interface.** Runs queries directly against the engine.
+- **Java GUI.** A desktop interface that passes queries to the native C++ engine through JNI and shows the results.
+
+## Tech stack
+
+C++, Java, JNI
